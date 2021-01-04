@@ -6,7 +6,15 @@
     <title>ToDo List</title>
 </head>
 <body>
-    <h1>today is a <%= KindofDay %> !</h1>
-
+    <h1><%= KindofDay %></h1>
+<ul>
+   <% for (var i=0; i<Itemlists.lenght; i++) { %>
+        <li><%= Itemlists[i] %></li>
+   <% } %>
+</ul>
+<form class ="" action= "/" method= "post">
+<input type= "text" name= "newItem" >
+<button type="submit" name="button">add</button>
+</form>
 </body>
 </html>
